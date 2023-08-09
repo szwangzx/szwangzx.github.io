@@ -1,0 +1,218 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.container {
+  flex: 1;
+  position: relative;
+}
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fade-in 0.5s;
+    }
+
+    .navbar .navbar-item {
+      color: #333;
+      font-weight: bold;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li:not(:first-child) {
+      margin-left: 15px; /* 调整导航项之间的间距 */
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .section {
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      margin: 40px;
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-item {
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      html {
+        font-size: 12px;
+      }
+    }
+
+   @media only screen and (min-width: 481px) and (max-width: 960px) {
+     html {
+       font-size: 14px;
+     }
+   }
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 35px;
+  text-align: left;
+  margin-top: auto;
+}
+   .wrap {
+      min-height: 100%;
+   }
+ 
+   .main {
+      padding-bottom: 50px;
+   }
+.license-box {
+  background-color: rgba(27,31,35,0.05);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.license-box .license-icon {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+.license-box .license-icon::after {
+  content: "\e8e4";
+  font-size: 12.5rem;
+  line-height: 1;
+  opacity: 0.1;
+  position: relative;
+  left: -0.85em;
+  bottom: 0.5em;
+  z-index: -1;
+}
+.license-box .license-title {
+  margin-bottom: 1rem;
+}
+.license-box .license-title div:nth-child(1) {
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+.license-box .license-title div:nth-child(2) {
+  color: var(--sec-text-color);
+  font-size: 0.8rem;
+}
+.license-box .license-meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.license-box .license-meta .license-meta-item {
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+.license-box .license-meta .license-meta-item div:nth-child(1) {
+  color: var(--sec-text-color);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.license-box .license-meta .license-meta-item i.iconfont {
+  font-size: 1rem;
+}
+@media (max-width: 575px) and (min-width: 425px) {
+  .license-box .license-meta .license-meta-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 0;
+  }
+  .license-box .license-meta .license-meta-item div:nth-child(1) {
+    margin-right: 0.5rem;
+  }
+  .license-box .license-meta .license-meta-date {
+    order: -1;
+  }
+}
+@media (max-width: 424px) {
+  .license-box::after {
+    top: -65px;
+  }
+  .license-box .license-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .license-box .license-meta .license-meta-item {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  .license-box .license-meta .license-meta-item div:nth-child(1) {
+    margin-right: 0.5rem;
+  }
+}
+
