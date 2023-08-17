@@ -5,7 +5,7 @@
 <div style="text-align: center;">
 <br>
 
-[![video](/MD/video.png "video")](https://baidu.com)
+[![video](/MD/video.png "video")](/MD/tour.mp4)
 
 <br>
 </div>
