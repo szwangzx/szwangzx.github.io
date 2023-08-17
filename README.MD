@@ -5,7 +5,7 @@
 <div style="text-align: center;">
 <br>
 
-[![video](/MD/video.png "video")](https://forgit.tigerwang.eu.org/MD/tour.mp4)
+[![video](/MD/video.png "video")](https://forgit.tigerwang.eu.org/MD/tour.html)
 
 <br>
 </div>
