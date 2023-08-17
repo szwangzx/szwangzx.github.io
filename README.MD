@@ -4,6 +4,8 @@
 <h3>Have a tour video!</h3>
 <div style="text-align: center;">
 <br>
+
 ![video](/MD/video.png "video")
+
 <br>
 </div>
